@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MenuItems = ({ text, url}) => {
     return (
@@ -9,3 +10,8 @@ const MenuItems = ({ text, url}) => {
 };
 
 export default MenuItems;
+
+MenuItems.propTypes = {
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
