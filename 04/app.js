@@ -6,7 +6,7 @@ const Menu = () => {
     return (
         <ul>
             <MenuItems text="home" url="/" />
-            <MenuItems text="contact" url="/" /> 
+            <MenuItems text="kontakt" url="/contact" /> 
         </ul>
     );
 }
