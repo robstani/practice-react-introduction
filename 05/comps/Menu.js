@@ -1,15 +1,16 @@
 import React from 'react';
-import MenuItems from '../../03/comps/MenuItems';
+import PropTypes from 'prop-types';
 
-
-const Menu = () => {
+const Menu = ({ items }) => {
     return (
         <ul>
-            <MenuItems text="home" url="/" />
-            <MenuItems text="kontakt" url="/contact" /> 
+            {items}
         </ul>
     );
 }
 
-export default Menu;
+Menu.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.element).isRequired
+};
 
+export default Menu;
